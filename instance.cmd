@@ -1,0 +1,1 @@
+aws ec2 run-instances --image-id ami-0ad3f364afc3df2ca --count 1 --instance-type t2.micro --key-name Lab2 --security-group-ids sg-0c2dh377ss9456270 --subnet-id subnet-04ad6r258145aa6d2 --user-data file://user_data.sh
