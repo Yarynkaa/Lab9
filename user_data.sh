@@ -13,7 +13,7 @@ apt-get update
     }' | tee /etc/systemd/system/docker.service.d/override.conf
 
     echo '{
-      "hosts": ["tcp://0.0.0.0:2375", "unix:///var/run/docker.sock"]
+      "hosts": ["unix:///var/run/docker.sock"]
     }' | tee /etc/docker/daemon.json
 
     systemctl daemon-reload
